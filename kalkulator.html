@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Javascript</title>
+    <link rel="stylesheet" href="css/styleku.css">
+
+</head>
+
+<body>
+    <div id="card">
+        <div id="card-title">
+            <h3 align="center">
+                Javascript Calculator
+            </h3>
+        </div>
+        <form id="formulir">
+            <table align="center" cellspacing="0" cellpadding="12" width="100%" border="0">
+                
+                <tbody>
+                    <tr>
+                        <td width="30%">Angka 1</td>
+                        <td>
+                            <input size="70%" type="text" name="a1" value="Angka Pertama" onfocus="kosong1()" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Angka 2</td>
+                        <td>
+                            <input size="40%" type="text" name="a2" value="Angka Kedua" onfocus="kosong2()" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hasil</td>
+                        <td>
+                            <input size="40%" type="text" name="hasil" value="0" disabled />
+                        </td>
+                    </tr>
+
+
+                </tbody>
+                <tfoot>
+                    <tr class="trr">
+                        <th colspan="2">
+                            <input name="tombol" type="button" onclick="tambah()" value="  +  ">&nbsp;
+                            <input name="tombol" type="button" onclick="kurang()" value="  -  ">&nbsp;
+                            <input name="tombol" type="button" onclick="kali()" value="  *  ">&nbsp;
+                            <input name="tombol" type="button" onclick="bagi()" value="  /  ">&nbsp;
+                            <input name="tombol" type="button" onclick="pangkat()" value="  ^  ">&nbsp;
+                            <input type="button" name="reset" value="Batal" onclick="kosongAll()" />
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </form>
+    </div>
+</body>
+<script src="js/calculator.js"></script>
+
+</html>
