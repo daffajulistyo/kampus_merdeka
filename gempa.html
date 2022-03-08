@@ -1,0 +1,53 @@
+<script>
+    class gempa {
+        constructor(lokasi, skala) {
+            this.lokasi = lokasi;
+            this.skala = skala;
+        }
+
+        dampak(skala) {
+            if (this.skala > 0 && this.skala <= 2) {
+                skala = "Dampaknya tidak terasa"
+                document.write(`Lokasi Gempa : ${this.lokasi} <br/> Skala : ${this.skala} <br/>  Dampak : ${skala} <hr/><br/>`);
+            } else if (this.skala > 2 && this.skala <= 4) {
+                skala = "Dampaknya bangunan retak retak"
+                document.write(`Lokasi Gempa : ${this.lokasi} <br/> Skala : ${this.skala} <br/> Dampak : ${skala} <hr/><br/>`);
+            } else if (this.skala > 4 && this.skala <= 6) {
+                skala = "Dampaknya bangunan Roboh dan berpotensi tsunami"
+                document.write(`Lokasi Gempa : ${this.lokasi} <br/> Skala : ${this.skala} <br/> Dampak : ${skala} <hr/><br/>`);
+            } else {
+                skala = "Gempa Tiggi"
+                document.write(`Lokasi Gempa : ${this.lokasi} <br/> Skala : ${this.skala} <br/> Dampak : ${skala} <hr/><br/>`);
+            }
+        }
+    }
+
+
+    let gempa1 = new gempa("Malaysia", 5);
+    gempa1.dampak();
+    let gempa2 = new gempa("Indonesia", 8);
+    gempa2.dampak();
+    let gempa3 = new gempa("Jerman", 2);
+    gempa3.dampak();
+    let gempa4 = new gempa("Korea", 1);
+    gempa4.dampak();
+    let gempa5 = new gempa("Australia", 6);
+    gempa5.dampak();
+    let gempa6 = new gempa("Singapura", 4);
+    gempa6.dampak();
+    let gempa7 = new gempa("China", 3);
+    gempa7.dampak();
+    let gempa8 = new gempa("India", 7);
+    gempa8.dampak();
+    let gempa9 = new gempa("Philipina", 7);
+    gempa9.dampak();
+    let gempa10 = new gempa("Canada", 5);
+    gempa10.dampak();
+
+
+
+
+
+
+
+</script>
