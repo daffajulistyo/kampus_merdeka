@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animal Sound</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript"> $("document").ready(function () {
+            $("div.kuda").mouseover(function () {
+                $(this).css({ background: "url('image/horse.jpg')" });
+            });
+            $(".kuda").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/horse.wav',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo(".kuda");
+            });
+            $(".beruang").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/bear.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo(".beruang");
+            });
+            $(".kucing").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/cat.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo(".kucing");
+            });
+            $(".sapi").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/cow.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo(".sapi");
+            });
+            $(".elang").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/eagle.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo(".elang");
+            });
+            $(".singa").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/bear.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo(".singa");
+            });
+            // $("div.kuda").mouseout(function () {
+            //     $(this).css({ background: "rgb(241, 141, 34)" });
+            // });
+            // $("div.burung").mouseover(function () {
+            //     $(this).css({ background: "url('image/eagle.jpg')" });
+            // });
+            // $("div.beruang").mouseover(function () {
+            //     $(this).css({ background: "url('image/bear.jpg')" });
+            // });
+            // $("div.kucing").mouseover(function () {
+            //     $(this).css({ background: "url('image/cat.jpg')" });
+            // });
+            // $("div.sapi").mouseover(function () {
+            //     $(this).css({ background: "url('image/cow.jpg')" });
+            // });  
+        }); 
+    </script>
+    <style type="text/css">
+        /* div {
+            background: rgb(241, 141, 34);
+            width: 250px;
+            height: 250px;
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+        } */
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 60%;
+            align-items: center;
+            margin: 17px;
+            border-radius: 12px;
+        }
+
+        
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <table border="0" width="90%" align="center">
+        <thead>
+            <tr>
+                <td align="center" colspan="2"><h1>Animals Sound</h1></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">
+                    <div class="card">
+                        <img src="image/horse.jpg" alt="Avatar" style="width:100%" class="kuda">
+                        <div class="container">
+                            <h4><b>Kuda</b></h4>
+                        </div>
+                    </div>
+                </td>
+                <td align="center">
+                    <div class="card">
+                        <img src="image/bear.jpg" alt="Avatar" style="width:100%" class="beruang">
+                        <div class="container">
+                            <h4><b>Beruang</b></h4>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <br/>
+            <tr>
+                <td align="center">
+                    <div class="card">
+                        <img src="image/cat.jpg" alt="Avatar" style="width:100%" class="kucing">
+                        <div class="container">
+                            <h4><b>Kucing</b></h4>
+                        </div>
+                    </div>
+                </td>
+                <td align="center">
+                    <div class="card">
+                        <img src="image/cow.jpg" alt="Avatar" style="width:100%" class="sapi">
+                        <div class="container">
+                            <h4><b>Sapi</b></h4>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div class="card">
+                        <img src="image/eagle.jpg" alt="Avatar" style="width:100%" class="elang">
+                        <div class="container">
+                            <h4><b>Elang</b></h4>
+                        </div>
+                    </div>
+                </td>
+                <td align="center">
+                    <div class="card">
+                        <img src="image/lion.jpg" alt="Avatar" style="width:100%" class="singa">
+                        <div class="container">
+                            <h4><b>Lion King</b></h4>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+</body>
+
+</html>
