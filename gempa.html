@@ -5,18 +5,18 @@
             this.skala = skala;
         }
 
-        dampak(skala) {
+        dampak() {
             if (this.skala > 0 && this.skala <= 2) {
-                skala = "Dampaknya tidak terasa"
+               let skala = "Dampaknya tidak terasa"
                 document.write(`Lokasi Gempa : ${this.lokasi} <br/> Skala : ${this.skala} <br/>  Dampak : ${skala} <hr/><br/>`);
             } else if (this.skala > 2 && this.skala <= 4) {
-                skala = "Dampaknya bangunan retak retak"
+               let skala = "Dampaknya bangunan retak retak"
                 document.write(`Lokasi Gempa : ${this.lokasi} <br/> Skala : ${this.skala} <br/> Dampak : ${skala} <hr/><br/>`);
             } else if (this.skala > 4 && this.skala <= 6) {
-                skala = "Dampaknya bangunan Roboh dan berpotensi tsunami"
+               let skala = "Dampaknya bangunan Roboh "
                 document.write(`Lokasi Gempa : ${this.lokasi} <br/> Skala : ${this.skala} <br/> Dampak : ${skala} <hr/><br/>`);
             } else {
-                skala = "Gempa Tiggi"
+               let skala = "Dampaknya bangunan Roboh dan berpotensi tsunami"
                 document.write(`Lokasi Gempa : ${this.lokasi} <br/> Skala : ${this.skala} <br/> Dampak : ${skala} <hr/><br/>`);
             }
         }
@@ -43,10 +43,6 @@
     gempa9.dampak();
     let gempa10 = new gempa("Canada", 5);
     gempa10.dampak();
-
-
-
-
 
 
 
